@@ -1,26 +1,32 @@
+<app-popup-inicio (nombreUsuario)=mostrarNombreUsuario($event)></app-popup-inicio>
+
 <header>
-  <div class="logo">
-    <img src="../assets/logo.png" alt="logo">
+  <div class="cabecera">
+    <div class="logo">
+      <img src="../assets/logo.png" alt="logo">
+    </div>
+    <div class="nombreLiga">
+      <h1>Nombre de la liga</h1>
+    </div>
+    <div class="usuario">
+      <h3>{{ nombreUsuario }}</h3>
+    </div>
   </div>
-  <div class="nombreLiga">
-
-  </div>
-  <div class="usuario">
-
-  </div>
+  
+  <nav>
+    <div>
+      <a [routerLink]="['/']">Equipos</a>
+    </div>
+    <div>
+      <a [routerLink]="['/eventos']">Eventos</a>
+    </div>
+  </nav>
 </header>
-
-<nav>
-  <div>
-    <a href="">Equipos</a>
-  </div>
-  <div>
-    <a href="">Eventos</a>
-  </div>
-</nav>
 
 <router-outlet></router-outlet>
 
 <footer>
-
+  <div>
+    <p>&copy; 2021 - Todos los derechos reservados</p>
+  </div>
 </footer>

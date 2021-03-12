@@ -1,0 +1,26 @@
+.fila{
+    width: 200%;
+    height: auto;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    border-bottom: 1px solid grey;
+    
+    div{
+        padding: 16px;
+
+        p, img, h4{
+            height: 100%;
+            line-height: 100%;
+        }
+    }
+    .escudo, .codigo{
+        width: 120px;
+        border-right: 1px solid grey;
+    }
+}
+.fila:last-child{
+    border: none;
+}

@@ -1,0 +1,18 @@
+main{
+    height: auto;
+    min-height: 80vh;
+    padding: 20px;
+    background-color: white;
+
+    article{
+        width: 100%;
+        max-width: 720px;
+        height: auto;
+        min-height: 60px;
+        margin: auto;
+        margin-bottom: 16px;
+        border: 1px solid grey;
+        border-radius: 4px;
+        box-shadow: 0 0 30px 0 rgba(0,0,0,.20);
+    }
+}

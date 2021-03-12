@@ -1,0 +1,15 @@
+header{
+    border-bottom: 1px solid grey;
+    padding: 16px;
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listaEventos{
+    width: 100%;
+    display: flex;
+    flex: column nowrap;
+    
+}

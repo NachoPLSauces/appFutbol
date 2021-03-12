@@ -1,0 +1,27 @@
+<ng-template #content let-modal> 
+    <div class="modal-header"> 
+        <h4 class="modal-title">Inicio de sesión</h4> 
+    </div> 
+    <div class="modal-body"> 
+        <form> 
+            <div class="form-group"> 
+                <label for="nombreUsuario">Nombre de usuario </label> <br>
+                <span>{{ errorUsuario }}</span>
+                <div class="input-group">
+                    <input type="text" (blur)="comprobarUsuario(nombreUsuario.value)" id="nombreUsuario" name="nombreUsuario" placeholder="Introduce tu nombre de usuario" #nombreUsuario>
+                </div>
+                <br>
+                <label for="passwdUsuario">Contraseña </label> <br>
+                <span>{{ errorPasswd }}</span>
+                <div class="input-group">
+                    <input type="password" (blur)="comprobarPasswd(passwdUsuario.value)" id="passwdUsuario" name="passwdUsuario" placeholder="Introduce tu contraseña" #passwdUsuario>
+                </div>
+            </div> 
+
+            <div class="modal-footer"> 
+                <button type="button" (click)="close(nombreUsuario.value, passwdUsuario.value)" class="btn btn-outline-dark">Login</button> 
+            </div> 
+        </form> 
+    </div> 
+    
+</ng-template>  
