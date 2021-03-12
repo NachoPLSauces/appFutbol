@@ -1,0 +1,51 @@
+header{
+    height: auto;
+    min-height: 5vh;
+    width: 100%;
+    background-color: white;
+
+    .cabecera, nav{
+        width: 100%;
+        max-width: 720px;
+        display: flex;
+        flex: row wrap;
+        align-items: center;
+        margin: auto;   
+    }
+    .cabecera{
+        padding-top: 10px;
+        justify-content: space-between;  
+        align-items:center;
+
+        .logo{
+            width: auto;
+            img{
+                height: 64px;
+            }
+        }
+        .usuario{
+            width: 150px;
+            font-size: 0.8em;
+        }
+    }
+    nav{
+        justify-content: space-around;  
+        
+        a{
+            text-decoration: none;
+            &:hover{
+                font-weight: bold;
+                color: rgb(68, 230, 19);
+            }
+        }
+    }
+}
+footer{
+    height: auto;
+    min-height: 5vh;
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}

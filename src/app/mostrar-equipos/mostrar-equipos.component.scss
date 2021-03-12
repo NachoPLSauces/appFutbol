@@ -1,0 +1,25 @@
+header{
+    border-bottom: 1px solid grey;
+    padding: 16px;
+    display: flex;
+    flex: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+
+    .escudoEquipo{
+        width: 40%;
+    }
+    .nombreEquipo{
+        width: 60%;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+.listaEquipos{
+    width: 100%;
+    display: flex;
+    flex: column nowrap;
+}
